@@ -1,0 +1,30 @@
+plugins {
+    // Apply the java plugin to add support for Java
+    id 'java'
+    // Apply the application plugin to add support for building a CLI application.
+    id 'application'
+    // Support for JavaFX
+    id 'org.openjfx.javafxplugin' version '0.0.9'
+}
+
+repositories {
+    //jcenter()
+    // If problems occur with mavenCentral, we'll change to jcenter, but I doubt that'll happen.
+    mavenCentral()
+}
+
+javafx {
+    version = "14"
+    // we specify the MODULES THAT THE PROJECT NEEDS.
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+dependencies {
+    implementation 'com.google.guava:guava:29.0-jre'
+    testImplementation 'junit:junit:4.13'
+    //compile 'io.github.typhon0:AnimateFX:1.2.2'
+}
+
+application {
+    mainClassName = 'gradle.demo.GUI'
+}
