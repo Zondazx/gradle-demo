@@ -24,6 +24,8 @@ Nothing here, the lib comes with everything and has no problems.
 
 > AnimateFX
 
+Nothing here, the lib works pretty well at the moment.
+
 > MySQL
 
 > PostgreSQL
@@ -32,7 +34,7 @@ Nothing here, the lib comes with everything and has no problems.
 
 - JavaFX **[DONE]**
 - Google Guava **[DONE]**
-- AnimateFX **[PENDING]**
+- AnimateFX **[DONE]**
 - MySQL **[PENDING]**
 - PostgreSQL **[PENDING]**
 
