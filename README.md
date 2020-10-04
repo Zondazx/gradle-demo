@@ -18,6 +18,10 @@ If needed, new branches can be created.
 If you need to use more modules from FX just go to 
 `build.gradle` > `javafx` > `modules` and add the ones you need.
 
+> Guava
+
+Nothing here, the lib comes with everything and has no problems.
+
 > AnimateFX
 
 > MySQL
@@ -27,6 +31,7 @@ If you need to use more modules from FX just go to
 #### Libs to test:
 
 - JavaFX **[DONE]**
+- Google Guava **[DONE]**
 - AnimateFX **[PENDING]**
 - MySQL **[PENDING]**
 - PostgreSQL **[PENDING]**
