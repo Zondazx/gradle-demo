@@ -20,16 +20,9 @@ If you need to use more modules from FX just go to
 
 > AnimateFX
 
-Nothing yet.
-
 > MySQL
 
-Nothing yet.
-
 > PostgreSQL
-
-Nothing yet.
-
 
 #### Libs to test:
 
