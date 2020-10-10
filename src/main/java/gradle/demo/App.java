@@ -3,12 +3,37 @@
  */
 package gradle.demo;
 
+import java.sql.*;
+
 public class App {
+
+    // db: laravel
+    // user: zondazx
+    // pwd: ""
+    // host: localhost / 127.0.0.1
+    // table n query: SELECT name FROM users LIMIT 1;
     public String getGreeting() {
         return "Hello world.";
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        String URL = "jdbc:mysql://localhost:3306/laravel";
+        String USERNAME = "root";
+        String PASSWORD = "";
+        try {
+            Connection connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
+
+            String query = "SELECT name FROM users LIMIT 1";
+            PreparedStatement st = connection.prepareStatement(query);
+            ResultSet results = st.executeQuery();
+
+            if (results.next()) {
+                System.out.println(results.getString("name"));
+            }
+
+
+        } catch (SQLException sqlException) {
+            sqlException.printStackTrace();
+        }
     }
 }

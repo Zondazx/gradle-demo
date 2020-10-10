@@ -28,6 +28,8 @@ Nothing here, the lib works pretty well at the moment.
 
 > MySQL
 
+Tests were made with 5.1.6, the other version is 8.0.21
+
 > PostgreSQL
 
 #### Libs to test:
@@ -35,7 +37,7 @@ Nothing here, the lib works pretty well at the moment.
 - JavaFX **[DONE]**
 - Google Guava **[DONE]**
 - AnimateFX **[DONE]**
-- MySQL **[PENDING]**
-- PostgreSQL **[PENDING]**
+- MySQL **[DONE]**
+- PostgreSQL **[DONE]**
 
 
