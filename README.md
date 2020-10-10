@@ -8,7 +8,7 @@ If needed, new branches can be created.
 
 #### To run:
 
-> gradlew run 
+`gradlew run` from the IDE plugin.
 
 
 #### About the [DONE]
