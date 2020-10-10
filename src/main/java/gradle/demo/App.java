@@ -7,16 +7,12 @@ import java.sql.*;
 
 public class App {
 
-    // db: laravel
-    // user: zondazx
-    // pwd: ""
-    // host: localhost / 127.0.0.1
-    // table n query: SELECT name FROM users LIMIT 1;
     public String getGreeting() {
         return "Hello world.";
     }
 
     public static void main(String[] args) {
+        /*
         String URL = "jdbc:mysql://localhost:3306/laravel";
         String USERNAME = "root";
         String PASSWORD = "";
@@ -24,8 +20,8 @@ public class App {
             Connection connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
 
             String query = "SELECT name FROM users LIMIT 1";
-            PreparedStatement st = connection.prepareStatement(query);
-            ResultSet results = st.executeQuery();
+            PreparedStatement test = connection.prepareStatement(query);
+            ResultSet results = test.executeQuery();
 
             if (results.next()) {
                 System.out.println(results.getString("name"));
@@ -35,5 +31,6 @@ public class App {
         } catch (SQLException sqlException) {
             sqlException.printStackTrace();
         }
+        */
     }
 }
